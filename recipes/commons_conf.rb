@@ -26,6 +26,7 @@ template 'nginx.conf' do
   group  'root'
   mode   '0644'
   notifies :reload, 'service[nginx]'
+  not_if { ::File.exists?("#{node['nginx']['dir']}/nginx.conf") }
 end
 
 template "#{node['nginx']['dir']}/sites-available/default" do
@@ -34,6 +35,7 @@ template "#{node['nginx']['dir']}/sites-available/default" do
   group  'root'
   mode   '0644'
   notifies :reload, 'service[nginx]'
+  not_if { ::File.exists?("#{node['nginx']['dir']}/sites-available/default") }
 end
 
 nginx_site 'default' do
