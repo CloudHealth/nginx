@@ -1,22 +1,3 @@
-Skip to content
-
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @pranesh14
-Sign out
-46
-0 804 CloudHealth/nginx
-forked from chef-cookbooks/nginx
- Code  Pull requests 0  Projects 0  Insights
-nginx/.travis.yml
-c304c2e  on Feb 25, 2014
-@someara someara [COOK-4358] - clean up .kitchen.yml
-
-104 lines (103 sloc)  12.4 KB
 language: ruby
 bundler_args: --without kitchen_vagrant
 rvm:
@@ -120,16 +101,3 @@ env:
   - KITCHEN_INSTANCE='modules-fedora-19'
   - KITCHEN_INSTANCE='modules-ubuntu-1004'
   - KITCHEN_INSTANCE='modules-ubuntu-1204'
-© 2018 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-API
-Training
-Shop
-Blog
-About
-Press h to open a hovercard with more details.
